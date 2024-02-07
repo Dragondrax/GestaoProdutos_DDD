@@ -1,5 +1,4 @@
 ﻿using Canducci.Pagination;
-using GestaoProdutos.Produtos.Application.Dto;
 using GestaoProdutos.Produtos.Application.RequestModels;
 using GestaoProdutos.Produtos.Application.Services;
 using Microsoft.AspNetCore.Mvc;
