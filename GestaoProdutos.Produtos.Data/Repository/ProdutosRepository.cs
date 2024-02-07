@@ -9,7 +9,7 @@ namespace GestaoProdutos.Produtos.Data.Repository
     public class ProdutosRepository : IProdutoRepository
     {
         private readonly ProdutosContext _context;
-        private const string sql = "select  p.\"Codigo\" CodigoProduto,f.\"Codigo\" CodigoFornecedor,p.\"Descricao\" DescricaoProduto,f.\"Descricao\" DescricacaoFornecedor,f.\"Cnpj\" CnpjFornecedor,f.\"Situacao\" SituacaoFornecedor,p.\"Situacao\" SituacaoProduto,p.\"DataFabricacao\",p.\"DataValidade\",p.\"DataCadastro\" DataCadastroProduto,f.\"DataCadastro\" DataCadastroFornecedor\r\nfrom public.\"Produtos\" P\r\njoin \"Fornecedor\" F on p.\"CodigoFornecedor\" = f.\"Codigo\"";
+        private const string sql = "select  p.\"Codigo\" CodigoProduto,f.\"Codigo\" CodigoFornecedor,p.\"Descricao\" DescricaoProduto,f.\"Descricao\" DescricaoFornecedor,f.\"Cnpj\" CnpjFornecedor,f.\"Situacao\" SituacaoFornecedor,p.\"Situacao\" SituacaoProduto,p.\"DataFabricacao\",p.\"DataValidade\",p.\"DataCadastro\" DataCadastroProduto,f.\"DataCadastro\" DataCadastroFornecedor\r\nfrom public.\"Produtos\" P\r\njoin \"Fornecedor\" F on p.\"CodigoFornecedor\" = f.\"Codigo\"";
         public ProdutosRepository(ProdutosContext context)
         {
             _context = context;
